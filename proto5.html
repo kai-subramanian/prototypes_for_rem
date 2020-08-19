@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Mystery phone</title>
+        <script>
+                function ValidateEmail(mail){
+                    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(xPhone.email.value))
+                     {
+                       return (true)
+                     }
+                       alert("You have entered an invalid email address!")
+                       return (false)
+                }
+        </script>
+        <style>
+            body{
+                background-color: black;
+            }
+            #a{
+                background-image: linear-gradient(to left, #B9FF00,#21FF6E,#FBFF00,#00D1FF);
+                -webkit-background-clip: text;
+                color: transparent;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 36px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table cellpadding="50">
+            <tr>
+                <td height="100px" width = "100px">
+                    <p id="a">
+                        The xPhone is our new product exclusively designed for people on the go.<br>
+                        It is built to last, with a brushed stainless steel exterior and carbon black finish.
+                    </p>
+                </td>
+                <td height="100px" width = "100px">
+                    <p id="a">
+                        On the front is a stunningly compact and beautiful 5.3 inch display. 
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td height="100px">
+                    <p id="a"> 
+                        Powered by the latest SoC technology, this makes best utilisation of the large 5000 mAh battery.
+                    </p>
+                </td>
+                <td>
+                    <p id="a">
+                        Extraordinary dual 16MP cameras that can capture true to life pictures.
+                    </p>
+                </td>            
+            </tr>
+            <tr>
+                <td>    
+                    <p id="a">
+                        Stay ahead of the game. Get launch date information, sign up here :
+                    </p>
+                </td>
+                <td>
+                    <p id="a">
+                        <form id="xPhone">
+                            Name<br><input type = "text" id = "name" maxlength=30><br>
+                            eMail ID<br><input type = "text" id = "email" onblur="ValidateEmail(this)"><br><br>
+                            <input type = "Submit">
+                        </form>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

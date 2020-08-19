@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>xPhone</title>
+        <script>
+                function ValidateEmail(mail){
+                    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(xPhone.email.value))
+                     {
+                       return (true)
+                     }
+                       alert("You have entered an invalid email address!")
+                       return (false)
+                }
+        </script>
+    </head>
+    <body>
+        <form id="xPhone">
+            Name<br><input type = "text" id = "name" maxlength=30><br>
+            eMail ID<br><input type = "text" id = "email" onblur="ValidateEmail(this)"><br><br>
+            <input type = "Submit">
+        </form>
+    </body>
+</html>
